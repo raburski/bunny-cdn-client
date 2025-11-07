@@ -1,0 +1,42 @@
+{
+	"name": "@raburski/bunny-cdn-client",
+	"version": "1.0.0",
+	"description": "A TypeScript client for interacting with Bunny CDN Storage API",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build",
+		"typecheck": "tsc --noEmit"
+	},
+	"keywords": [
+		"bunnycdn",
+		"cdn",
+		"storage",
+		"file-upload",
+		"typescript"
+	],
+	"author": "",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raburski/bunny-cdn-client.git"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.0",
+		"typescript": "^5.8.2"
+	}
+}
