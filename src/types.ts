@@ -25,3 +25,49 @@ export interface DeleteResult {
 	error?: string
 }
 
+/**
+ * File information/metadata
+ */
+export interface FileInfo {
+	name: string
+	path: string
+	size: number
+	lastModified: Date
+	isDirectory: boolean
+}
+
+/**
+ * Result of a list files operation
+ */
+export interface ListFilesResult {
+	success: boolean
+	files?: FileInfo[]
+	error?: string
+}
+
+/**
+ * Result of a file exists check
+ */
+export interface FileExistsResult {
+	exists: boolean
+	error?: string
+}
+
+/**
+ * Result of a get file info operation
+ */
+export interface GetFileInfoResult {
+	success: boolean
+	fileInfo?: FileInfo
+	error?: string
+}
+
+/**
+ * Result of an upload from URL operation
+ */
+export interface UploadFromUrlResult {
+	success: boolean
+	url?: string
+	error?: string
+}
+
